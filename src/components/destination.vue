@@ -22,11 +22,7 @@
               <img :src="i.img" />
             </template>
             <div>
-              <div class="py-4 flex justify-between items-center">
-                <span>{{ i.location }}</span>
-                <span>${{ i.amount }}k</span>
-              </div>
-              <div class="flex items-center gap-2 mt-6">
+              <div class="py-4 flex  items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -40,7 +36,12 @@
                     clip-rule="evenodd"
                   />
                 </svg>
-                <span>{{ i.trip }} Days Trip</span>
+                <span class="ml-2">{{ i.location }}</span>
+                <!-- <span>${{ i.amount }}k</span> -->
+              </div>
+              <div class="flex items-center gap-2 mt-6">
+               
+                <!-- <span>{{ i.trip }} Days Trip</span> -->
               </div>
             </div>
           </n-card>
@@ -62,9 +63,9 @@
   const destinationCards = ref([]);
   
   const test = [
-    { id: 1, img: "/location/us.jpg", amount: 10, location: "United States", trip: 10 },
-    { id: 2, img: "/location/uk.jpg", amount: 16, location: "United Kingdom", trip: 12 },
-    { id: 3, img: "/location/euro.jpg", amount: 45, location: "All Europe", trip: 27 },
+    { id: 1, img: "/location/us.jpg",  location: "United States",},
+    { id: 2, img: "/location/uk.jpg",  location: "United Kingdom",  },
+    { id: 3, img: "/location/euro.jpg",  location: " Europe" },
   ];
   
   onMounted(() => {
