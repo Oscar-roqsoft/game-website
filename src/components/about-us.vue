@@ -26,7 +26,7 @@
                                 </svg>
                             </div>
                             <div class="ml-2 items-center col-span-11 text-[#CED1E5]">
-                                Expert Guidance - Our team has an extensive knowledge UK study and visa requirement
+                               {{ i }}
                             </div>
                         </div>
                     </div>
