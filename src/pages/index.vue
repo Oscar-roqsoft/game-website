@@ -50,26 +50,44 @@
                              </div>
                             <div class="mt-4">
                                 <n-space align="flex-end">
-                                    <n-avatar
-                                    round
-                                    size="small"
-                                    src="/socials/fb.png"
-                                    />
-                                    <n-avatar
-                                    round
-                                    size="medium"
-                                    src="/socials/ytube.png"
-                                    />
-                                    <n-avatar
-                                    round
-                                    size="large"
-                                    src="/socials/tik.png"
-                                    />
-                                    <n-avatar
-                                    round
-                                    :size="48"
-                                    src="/socials/insta.jpg"
-                                    />
+                                    <a href="https://www.facebook.com/share/15k3hxUV2u/?mibextid=wwXIfr"
+                                     target="_blank">
+                                        <n-avatar
+                                        round
+                                        size="small"
+                                        src="/socials/fb.png"
+                                         
+                                        />
+                                    </a>
+
+
+
+                                   <a href="https://youtube.com/@infinitepathways5?si=pwKtqO6JPUOLhXKC"
+                                   target="_blank">
+                                       <n-avatar
+                                       round
+                                       size="medium"
+                                       src="/socials/ytube.png"
+                                       />
+                                   </a>
+
+                                   <a href="https://www.tiktok.com/@infinite.pathways?_t=ZN-8uHVBY0PxWo&_r=1"
+                                   target="_blank">
+                                       <n-avatar
+                                       round
+                                       size="large"
+                                       src="/socials/tik.png"
+                                       />
+                                   </a>
+
+                                    <a href=". https://www.instagram.com/infinitepathways.uk?igsh=MTRoOWlmaHc0a2Q2Mg==&utm_source=ig_contact_invite"
+                                    target="_blank">
+                                        <n-avatar
+                                        round
+                                        :size="48"
+                                        src="/socials/insta.jpg"
+                                        />
+                                    </a>
                                 </n-space>
                             </div>
                         </div>

@@ -44,10 +44,15 @@
             </h3>
             <nav>
               <ul class="space-y-2 mt-4">
-                <li><a href="#" class="flex items-center hover:text-gray-400"><i data-feather="youtube"></i> <span class="ml-2">YouTube</span></a></li>
-                <li><a href="#" class="flex items-center hover:text-gray-400"><i data-feather="facebook"></i> <span class="ml-2">Facebook</span></a></li>
-                <li><a href="#" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Instagram</span></a></li>
-                <li><a href="#" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Tiktok</span></a></li>
+                <li><a href="https://youtube.com/@infinitepathways5?si=pwKtqO6JPUOLhXKC"
+                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="youtube"></i> <span class="ml-2">YouTube</span></a></li>
+                <li><a href="https://www.facebook.com/share/15k3hxUV2u/?mibextid=wwXIfr" 
+                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="facebook"></i> <span class="ml-2">Facebook</span></a></li>
+                <li><a href="www.instagram.com/infinitepathways.uk?igsh=MTRoOWlmaHc0a2Q2Mg==&utm_source=ig_contact_invite" 
+                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Instagram</span></a></li>
+
+                <li><a href="https://www.tiktok.com/@infinite.pathways?_t=ZN-8uHVBY0PxWo&_r=1"
+                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Tiktok</span></a></li>
               </ul>
             </nav>
           </div>
@@ -79,7 +84,13 @@
                         <path d="M15.4414 14.333C15.4414 15.4376 14.546 16.333 13.4414 16.333H12.4414C11.5095 16.333 11.0436 16.333 10.676 16.1808C10.186 15.9778 9.79664 15.5884 9.59365 15.0984C9.44141 14.7308 9.44141 14.2649 9.44141 13.333V11.333C9.44141 10.4011 9.44141 9.93519 9.59365 9.56764C9.79664 9.07759 10.186 8.68824 10.676 8.48525C11.0436 8.33301 11.5095 8.33301 12.4414 8.33301H13.4414C14.546 8.33301 15.4414 9.22844 15.4414 10.333" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                     <p class=" ml-[4px]">2024  Infinite Pathways. All rights reserved</p>
-            </div>       
+            </div> 
+            <p class=" ml-[4px]">Powered by 
+              <a href="roqsoft.com" target="_blank" class="text-[#F17216] underline">
+                 Roqsoft.
+              </a>
+            </p>
+      
          </div>
       </div>
     </footer>
