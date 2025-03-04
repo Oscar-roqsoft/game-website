@@ -27,7 +27,7 @@
               {{ item.label }}
             </a>
   
-            <a href="https://dashboard.belugar.com/" target="_blank">
+            <a href="https://yeerlo.com/infinite-pathways-consultation" target="_blank">
               <Button name="Let's Talk " textColor="#fff" color="#2f3192" borderColor="#FF698D" />
             </a>
 
@@ -76,7 +76,7 @@
                     </div> -->
                     
                     <div class="px-6 w-full">
-                      <a href="https://dashboard.belugar.com/register" target="_blank">
+                      <a href="https://yeerlo.com/infinite-pathways-consultation" target="_blank">
                         <Button name="Let's Talk" height="50px" width="100%" textColor="#fff" color="#2f3192" borderColor="#2f3192"/>
                       </a>
                     </div>

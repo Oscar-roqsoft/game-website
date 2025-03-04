@@ -23,7 +23,7 @@
                             <!-- #FF698D -->
                              <div  class="flex items-center gap-10">
 
-                                 <a href="#" target="_blank">
+                                 <a href="https://yeerlo.com/infinite-pathways-consultation" target="_blank">
                                      <Button class="shadow-lg cursor-pointer" name="Let's Talk" textColor="#fff" color="#2f3192" borderColor="#FF698D" />
                                  </a>
                                  <a @click="openModal" class="flex items-center gap-2 cursor-pointer">
