@@ -47,22 +47,25 @@
             <aside class="fixed inset-y-0 left-0 z-[998] w-[75%] bg-[#F4F7FA] transform -translate-x-full transition-transform duration-300 ease-in-out" id="mobileDrawer">
               <nav class=" flex flex-col space-y-4">
                 <div class="px-5 flex flex-col items-start space-y-4 my-4">
+
+                     
+                  <a 
+                   v-for="(item, index) in navigationItems"  :key="index"
+                   :href="`#${item.href}`" @click="navigateTo(item.label),showNavbar = false">
+                    
                     <n-button
-                      v-for="(item, index) in navigationItems"
-                      :key="index"
                       quaternary
                       size="large"
 
                     >
-                    <a :href="`#${item.href}`" @click="navigateTo(item.label),showNavbar = false">
 
                       <span class="text-[18px]  hover:text-[#2f3192]"
                       :class="pinia.state.selectedNavMenu === item.label ? 'text-[#2f3192] ':'text-[#1D1D1D]'"
                       >
                         {{ item.label }}
                       </span>
-                    </a>
                     </n-button>
+                  </a>
                   </div>
 
 
