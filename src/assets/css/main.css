@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 
 .text-gray-color{

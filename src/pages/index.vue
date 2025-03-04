@@ -24,9 +24,9 @@
                              <div  class="flex items-center gap-10">
 
                                  <a href="#" target="_blank">
-                                     <Button class="shadow-lg" name="Let's Talk" textColor="#fff" color="#2f3192" borderColor="#FF698D" />
+                                     <Button class="shadow-lg cursor-pointer" name="Let's Talk" textColor="#fff" color="#2f3192" borderColor="#FF698D" />
                                  </a>
-                                 <a @click="openModal" class="flex items-center gap-2">
+                                 <a @click="openModal" class="flex items-center gap-2 cursor-pointer">
                                     <svg class=" shadow-lg rounded-full" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="#2f3192" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.783 7.99l5.644 3.136a1 1 0 0 1 0 1.748l-5.644 3.136A1.2 1.2 0 0 1 9 14.96V9.04a1.2 1.2 0 0 1 1.783-1.05" clip-rule="evenodd"/></svg>
                                     <span class=" font-semibold">Play video</span>
                                  </a>
@@ -48,7 +48,7 @@
                                     </n-card>
                                 </n-modal>
                              </div>
-                            <div class="mt-4">
+                            <div class="mt-4 ">
                                 <n-space align="flex-end">
                                     <a href="https://www.facebook.com/share/15k3hxUV2u/?mibextid=wwXIfr"
                                      target="_blank">

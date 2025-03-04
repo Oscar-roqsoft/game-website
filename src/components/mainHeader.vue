@@ -18,8 +18,8 @@
             <a
               v-for="(item) in navigationItems"
               :key="item.label"
-              @click.prevent="navigateTo(item.href,item.label)"
-              :href="`#`"
+            @click="navigateTo(item.label)"
+              :href="`#${item.href}`"
               class="p-[6px_16px] text-[16px] capitalize cursor-pointer hover:border rounded-full hover:border-[#2f3192] hover:text-[#2f3192] transition ease-in-out duration-300"
               :class="pinia.state.selectedNavMenu === item.label ? 'text-[#2f3192]  rounded-full border-[#2f3192]':' border-b-0'"
             >
@@ -52,9 +52,9 @@
                       :key="index"
                       quaternary
                       size="large"
-                      @click="showNavbar = false"
+
                     >
-                    <a :href="`#services`">
+                    <a :href="`#${item.href}`" @click="navigateTo(item.label),showNavbar = false">
 
                       <span class="text-[18px]  hover:text-[#2f3192]"
                       :class="pinia.state.selectedNavMenu === item.label ? 'text-[#2f3192] ':'text-[#1D1D1D]'"
@@ -131,13 +131,13 @@
 
 
     const navigationItems = [
-      { label: 'home', href: '/' },
-      { label: 'services', href: '/services' },
-      { label: 'about-us', href: '/about-us' },
-      { label: 'contact', href: '/contact' },
+      { label: 'home', href: '' },
+      { label: 'services', href: 'services' },
+      { label: 'about-us', href: 'about-us' },
+      // { label: 'contact', href: 'contact' },
     ]
 
-  const navigateTo = (path,label) => {
+  const navigateTo = (label) => {
     // useRouter().push(path)
     pinia.state.selectedNavMenu = label
   }

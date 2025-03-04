@@ -85,7 +85,7 @@
                     </svg>
                     <p class=" ml-[4px]">2024  Infinite Pathways. All rights reserved</p>
             </div> 
-            <p class=" ml-[4px]">Powered by 
+            <p class=" ml-[4px]">Built by 
               <a href="https://roqsoft.com/" target="_blank" class="text-[#F17216] underline">
                  Roqsoft.
               </a>
