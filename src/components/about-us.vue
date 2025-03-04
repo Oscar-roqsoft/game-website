@@ -45,11 +45,11 @@
 <script setup>
 
   const about_us = [
-    'Expert Guidance - Our team has an extensive knowledge UK study and visa requirement',
+    'Expert Guidance - Our team has an extensive knowledge UK, US, EU study and visa requirement',
     'Personalized Support - We tailor our services to your specific needs',
-    'Proven Success - We track record of successfully securing admissions and Visas',
-    'Affordable And Transparent - No hidden fees, just reliable service',
-    'End-To-End Assistance - From application to arrival,we guide your every step of the way'
+    'Proven Success - A track record of successfully securing admissions and Visas',
+    'Affordable and Transparent - No hidden fees, just reliable service',
+    'End-To-End Assistance - From application to arrival,we guide you and your every step of the way'
 
   ]
 </script>
