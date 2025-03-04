@@ -14,22 +14,39 @@
                             </h1>
 
                             <p ref="heroDesc" class="text-[20px] text-[#747582] tracking-[2%] leading-[36px] opacity-0">
-                                Support small business and join the nationwide movement to encourage commercial support
-                                for the millions of minority owned businesses helping world economy.
+                                Explore endless possibilities with expert visa consultation. Whether for travel, work, or study, we guide you through every step, 
+                                ensuring a smooth journey to your dream destination. Start your journey today! 🌍✈️
                             </p>
                         </div>
 
                         <div ref="ctaButton" class="opacity-0 mt-6">
                             <!-- #FF698D -->
-                             <div class="flex items-center gap-10">
+                             <div  class="flex items-center gap-10">
 
                                  <a href="#" target="_blank">
                                      <Button class="shadow-lg" name="Let's Talk" textColor="#fff" color="#2f3192" borderColor="#FF698D" />
                                  </a>
-                                 <a href="" class="flex items-center gap-2">
+                                 <a @click="openModal" class="flex items-center gap-2">
                                     <svg class=" shadow-lg rounded-full" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="#2f3192" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.783 7.99l5.644 3.136a1 1 0 0 1 0 1.748l-5.644 3.136A1.2 1.2 0 0 1 9 14.96V9.04a1.2 1.2 0 0 1 1.783-1.05" clip-rule="evenodd"/></svg>
                                     <span class=" font-semibold">Play video</span>
                                  </a>
+
+
+                                 <n-modal v-model:show="showModal" transform-origin="center">
+                                    <n-card
+                                    style="width: 600px"
+                                    :bordered="false"
+                                    size="huge"
+                                    role="dialog"
+                                    aria-modal="true"
+                                    >
+                                     <!-- Video Background -->
+                                    <video ref="videoPlayer" class="w-full h-full" autoplay loop  playsinline>
+                                    <source src="/test/Ekaterina Shelehova -  Earth Melodies.mp4" type="video/mp4">
+                                       Your browser does not support the video tag.
+                                    </video>
+                                    </n-card>
+                                </n-modal>
                              </div>
                             <div class="mt-4">
                                 <n-space align="flex-end">
@@ -139,7 +156,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import gsap from "gsap";
-import { NAvatar,NSpace,NImage,NCarousel} from 'naive-ui'
+import { NAvatar,NSpace,NImage,NCarousel,NModal,NCard} from 'naive-ui'
 
 // Refs for elements
 const heroText = ref(null);
@@ -147,6 +164,28 @@ const heroDesc = ref(null);
 const ctaButton = ref(null);
 const heroImage = ref(null);
 const bgImage = ref(null);
+
+const showModal = ref(false)
+const videoPlayer = ref(null);
+
+const openModal = () => {
+  showModal.value = true;
+  setTimeout(() => {
+    if (videoPlayer.value) {
+      videoPlayer.value.play();
+    }
+  }, 300);
+};
+
+const closeModal = () => {
+  showModal.value = false;
+};
+
+const pauseVideo = () => {
+  if (videoPlayer.value) {
+    videoPlayer.value.pause();
+  }
+};
 
 
 const img = [
