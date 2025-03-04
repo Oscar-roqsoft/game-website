@@ -28,8 +28,8 @@
               </p>
 
               <div v-for="(n, idx) in i.items" :key="idx" class="flex">
-                <div class="flex space-x-2 space-y-2 justify-center items-center">
-                  <div class="h-4 w-4 bg-[#F17216] rounded-full flex justify-center items-center">
+                <div class="flex space-x-2 space-y-2  items-center">
+                  <div class="h-4 w-4 bg-[#F17216] mt-3 rounded-full flex justify-center items-center">
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkmark">
                       <path d="M13.707 4.293a1 1 0 0 0-1.414 0L6 10.586 3.707 8.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z" fill="#FFF"/>
                     </svg>
