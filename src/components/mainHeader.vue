@@ -19,6 +19,7 @@
               v-for="(item) in navigationItems"
               :key="item.label"
               @click.prevent="navigateTo(item.href,item.label)"
+              :href="`#`"
               class="p-[6px_16px] text-[16px] capitalize cursor-pointer hover:border rounded-full hover:border-[#2f3192] hover:text-[#2f3192] transition ease-in-out duration-300"
               :class="pinia.state.selectedNavMenu === item.label ? 'text-[#2f3192]  rounded-full border-[#2f3192]':' border-b-0'"
             >

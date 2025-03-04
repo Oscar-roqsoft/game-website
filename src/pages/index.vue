@@ -80,7 +80,7 @@
                                        />
                                    </a>
 
-                                    <a href=". https://www.instagram.com/infinitepathways.uk?igsh=MTRoOWlmaHc0a2Q2Mg==&utm_source=ig_contact_invite"
+                                    <a href="https://www.instagram.com/infinitepathways.uk?igsh=MTRoOWlmaHc0a2Q2Mg==&utm_source=ig_contact_invite"
                                     target="_blank">
                                         <n-avatar
                                         round

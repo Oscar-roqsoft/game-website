@@ -48,7 +48,7 @@
                   target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="youtube"></i> <span class="ml-2">YouTube</span></a></li>
                 <li><a href="https://www.facebook.com/share/15k3hxUV2u/?mibextid=wwXIfr" 
                   target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="facebook"></i> <span class="ml-2">Facebook</span></a></li>
-                <li><a href="www.instagram.com/infinitepathways.uk?igsh=MTRoOWlmaHc0a2Q2Mg==&utm_source=ig_contact_invite" 
+                <li><a href="https://www.instagram.com/infinitepathways.uk/?utm_source=ig_contact_invite" 
                   target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Instagram</span></a></li>
 
                 <li><a href="https://www.tiktok.com/@infinite.pathways?_t=ZN-8uHVBY0PxWo&_r=1"
@@ -86,7 +86,7 @@
                     <p class=" ml-[4px]">2024  Infinite Pathways. All rights reserved</p>
             </div> 
             <p class=" ml-[4px]">Powered by 
-              <a href="roqsoft.com" target="_blank" class="text-[#F17216] underline">
+              <a href="https://roqsoft.com/" target="_blank" class="text-[#F17216] underline">
                  Roqsoft.
               </a>
             </p>
