@@ -69,6 +69,10 @@
                     Email: info@infinitepathways.uk 
                 </a></li>
                 <li><a href="mailto:contact.laboiserie@gmail.com" class="hover:text-gray-400">
+                    Call: +44 7876 210359 
+
+                </a></li>
+                <li><a href="mailto:contact.laboiserie@gmail.com" class="hover:text-gray-400">
                     WhatsApp: +44 7448 805912
                 </a></li>
               </ul>
