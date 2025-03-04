@@ -26,11 +26,11 @@
               <span class="ml-2">Links</span>
             </h3>
             <nav>
-              <ul class="space-y-2 mt-4">
-                <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#" class="hover:text-gray-400">Services</a></li>
-                <li><a href="#" class="hover:text-gray-400">About Us</a></li>
-                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+              <ul class="space-y-2  mt-4">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+                <li><a href="#about-us" class="hover:text-gray-400">About Us</a></li>
+                <!-- <li><a href="#" class="hover:text-gray-400">Contact</a></li> -->
                 <!-- <li><a href="#" class="hover:text-gray-400">Règlement concours</a></li> -->
               </ul>
             </nav>
