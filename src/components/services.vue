@@ -58,7 +58,7 @@
 //   import Checkmark16Filled from '@vicons/fluent/Checkmark16Filled'
 
   
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
   
   const servicesSection = ref(null);
   

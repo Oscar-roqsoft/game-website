@@ -55,7 +55,7 @@
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { NCard } from "naive-ui";
   
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
   
   const topDestinationsSection = ref(null);
   const heading = ref(null);
