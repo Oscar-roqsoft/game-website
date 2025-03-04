@@ -49,7 +49,7 @@
     'Personalized Support - We tailor our services to your specific needs',
     'Proven Success - A track record of successfully securing admissions and Visas',
     'Affordable and Transparent - No hidden fees, just reliable service',
-    'End-To-End Assistance - From application to arrival,we guide you and your every step of the way'
+    'End-To-End Assistance - From application to arrival,we guide you every step of the way'
 
   ]
 </script>
