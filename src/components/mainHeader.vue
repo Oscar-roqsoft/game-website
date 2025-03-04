@@ -51,13 +51,16 @@
                       :key="index"
                       quaternary
                       size="large"
-                      @click="navigateTo(item.href,item.label); showNavbar = false"
+                      @click="showNavbar = false"
                     >
+                    <a :href="`#services`">
+
                       <span class="text-[18px]  hover:text-[#2f3192]"
                       :class="pinia.state.selectedNavMenu === item.label ? 'text-[#2f3192] ':'text-[#1D1D1D]'"
                       >
                         {{ item.label }}
                       </span>
+                    </a>
                     </n-button>
                   </div>
 
@@ -134,7 +137,7 @@
     ]
 
   const navigateTo = (path,label) => {
-    useRouter().push(path)
+    // useRouter().push(path)
     pinia.state.selectedNavMenu = label
   }
 

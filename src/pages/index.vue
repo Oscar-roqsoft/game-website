@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section id="hero" class="min-h-[99vh] relative flex justify-center items-center">
+        <section id="home" class="min-h-[99vh] relative flex justify-center items-center">
             <div class="absolute bottom-0 left-0">
                 <img src="/hero/rect.png" alt="hero-bg" ref="bgImage">
             </div>
@@ -122,7 +122,7 @@
             </n-watermark>
         </section>
 
-        <section>
+        <section id="services">
             <Services/>
         </section>
 
@@ -130,7 +130,7 @@
             <Destination/>
         </section>
 
-        <section>
+        <section id="about-us">
             <AboutUs/>
         </section>
 
