@@ -18,12 +18,12 @@
           <div v-for="(i, index) in services" :key="index" 
                class="service-card opacity-0 transform translate-y-10 scale-90"
                ref="serviceCards">
-            <div class="py-[16px] bg-slate-100 rounded-md p-4 shadow-sm h-full">
+            <div class="py-[16px] bg-[#2f3192e0] text-white rounded-md p-4 shadow-sm h-full">
               <!-- SVG Icon -->
               <div class="w-10 mb-4" v-html="i.icon"></div>
 
               <h4 class="text-[20px] font-semibold">{{ i.title }}</h4>
-              <p class="text-[16px] my-4 text-[#747582] tracking-[2%] leading-[20.5px]">
+              <p class="text-[16px] my-4 text-[#d0caca] tracking-[2%] leading-[20.5px]">
                 {{ i.desc }}
               </p>
 
