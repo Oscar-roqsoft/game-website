@@ -45,7 +45,7 @@
 <script setup>
 
   const about_us = [
-    'Expert Guidance - Our team has extensive knowledge of the UK, US, EU study and visa requirement.',
+    'Expert Guidance - Our team has extensive knowledge of the UK, US, EU study and visa requirements.',
     'Personalized Support - We tailor our services to your specific needs.',
     'Proven Success - A track record of successfully securing admissions and Visas.',
     'Affordable and Transparent - No hidden fees, just reliable service.',
