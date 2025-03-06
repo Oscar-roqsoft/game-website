@@ -6,7 +6,7 @@
             <div class="md:max-w-[440px] ">
                 <span class="text-[#F17216] border-l-2 text-sm  border-[#F17216] px-1.5">Testimonial</span>
                 <h2 class=" text-[34px] md:text-[44px] font-bold mb-2.5 tracking-wide">What Our 
-                    Client’s Say</h2>
+                    Clients Say</h2>
             </div>
         </div>
         <div  class="bg-[url('/test/bg.png')] bg-cover bg-center">
