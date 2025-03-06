@@ -69,7 +69,7 @@
     icon: `<svg fill="#FF698D" viewBox="0 0 24 24"><path d="M4 2h10l6 6v14H4V2zm10 1.5V9h5.5L14 3.5zM6 12h12v2H6v-2zm0 4h12v2H6v-2z"/></svg>`,
     items: [
       "BSc, MSc/PhD Applications",
-      "Visa Applications (Student, Spousal & Visiting Visas)",
+      "Visa Applications (Student, Spousal & Visit Visas)",
     ],
   },
   {
