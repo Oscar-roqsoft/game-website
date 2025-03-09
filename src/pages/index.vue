@@ -42,7 +42,7 @@
                                     >
                                      <!-- Video Background -->
                                     <video ref="videoPlayer" class="w-full h-full" autoplay loop  playsinline>
-                                    <source src="/test/video.mp4" type="video/mp4">
+                                    <source src="/hero/Infinitetravel.mp4" type="video/mp4">
                                        Your browser does not support the video tag.
                                     </video>
                                     </n-card>
