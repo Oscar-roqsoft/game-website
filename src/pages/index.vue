@@ -37,12 +37,12 @@
     </div>
     </section> -->
 
-    <HowItWorks/>
+   
     
     <!-- Welcome & Animated Cards -->
-    <section class="py-20 px-6 text-white">
+    <section class="pt-20 px-6 text-white">
     <div class="max-w-[1200px] mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12 ">You are most welcomed <br> in the gaming world</h2>
+        <h2 class="text-4xl font-bold mb-12 ">You are most welcomed <br class="hidden md:block"> in the gaming world</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="p-6 bg-gray-900 rounded-xl shadow-lg animate-slide-in-left transition-all duration-1000 hover:scale-105">
             <img src="/image/livestream1.jpg" alt="Livestreaming" class="w-full h-40 object-cover rounded mb-4" />
@@ -63,6 +63,9 @@
     </div>
     </section>
 
+
+    <HowItWorks/>
+
     <div class="bg-gray-800">
 
         <div class="max-w-[1200px] mx-auto  py-10 rounded-lg">
@@ -71,7 +74,7 @@
     </div>
 
 
-    <div class="bg-gray-900 mt-14">
+    <div class="bg-gray-900 my-14">
         <div class="max-w-[1200px] mx-auto ">
             <Why/>
         </div>
