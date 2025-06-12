@@ -12,6 +12,7 @@
   "dependencies": {
     "@google-translate-select/vue3": "^0.1.8",
     "@pinia/nuxt": "^0.5.1",
+    "dayjs": "^1.11.13",
     "feather-icons": "^4.29.2",
     "gsap": "^3.12.5",
     "nuxt": "^3.9.0",

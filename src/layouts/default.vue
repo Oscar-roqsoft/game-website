@@ -4,7 +4,7 @@
         <MainHeader/>
         <slot/>
 
-        <MainFooter/>
+        <!-- <MainFooter/> -->
     </div>
 </template>
 
