@@ -1,150 +1,97 @@
 <template>
-    <footer class="mt-20 py-12 text-white bg-[#282C4B] relative overflow-hidden">
-      <!-- Parallax Background -->
-      <div class="absolute bottom-0 left-0 w-full h-[300px] overflow-hidden z-0">
-        <div class="absolute inset-0 bg-repeat-x bg-bottom animate-parallax" style="background-image: url(https://i.ibb.co/nQM4PGJ/arbres.png);"></div>
-        <div class="absolute inset-0 bg-repeat-x bg-bottom animate-parallax-fast" style="background-image: url(https://i.ibb.co/RQhDWbk/premierplanv3.png);"></div>
-        <div class="absolute inset-0 bg-repeat-x bg-bottom animate-parallax-medium" style="background-image: url(https://i.ibb.co/J3TjC4W/second-plan.png);"></div>
-        <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-[150px] h-[200px] bg-no-repeat bg-contain animate-moto" style="background-image: url(https://i.ibb.co/JCGfFJd/moto-net.gif);"></div>
-        <div class="absolute bottom-5 left-1/2 ml-[250px] w-[206px] h-[114px] bg-no-repeat bg-contain animate-voiture" style="background-image: url(https://i.ibb.co/0Qhp4DN/voiture-fumee.gif);"></div>
-      </div>
-  
-      <!-- Footer Content -->
-      <div class="relative z-50 container mx-auto px-4">
-        <div class="flex flex-wrap justify-between">
-            <div class="w-full md:w-1/3">
+  <footer class="footer">
+    <div class="row social-icons flex justify-center">
+      <a href="#" aria-label="Facebook">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.3c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.5.7-1.5 1.4v1.7H18l-.4 3h-2.6v7A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1.1.5 1.5.9.4.4.7.9.9 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5a3.6 3.6 0 0 1-.9 1.5c-.4.4-.9.7-1.5.9-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4a3.6 3.6 0 0 1-1.5-.9 3.6 3.6 0 0 1-.9-1.5c-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1.1.9-1.5.4-.4.9-.7 1.5-.9.5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8C8.8 4 8.4 4 7.1 4.1c-.9.1-1.4.2-1.7.3a1.9 1.9 0 0 0-1 .6c-.3.3-.5.6-.6 1-.1.3-.2.8-.3 1.7C4 8.4 4 8.8 4 12s0 3.6.1 4.9c.1.9.2 1.4.3 1.7.1.4.3.7.6 1 .3.3.6.5 1 .6.3.1.8.2 1.7.3 1.3.1 1.7.1 4.9.1s3.6 0 4.9-.1c.9-.1 1.4-.2 1.7-.3.4-.1.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.2-.8.3-1.7.1-1.3.1-1.7.1-4.9s0-3.6-.1-4.9c-.1-.9-.2-1.4-.3-1.7a1.9 1.9 0 0 0-.6-1 1.9 1.9 0 0 0-1-.6c-.3-.1-.8-.2-1.7-.3C15.6 4 15.2 4 12 4Zm0 3.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4Zm0 1.8a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Zm5.5-1.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z"/></svg>
+      </a>
+      <a href="#" aria-label="tiktok">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from BoxIcons by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74a2.89 2.89 0 0 1 2.31-4.64a2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="currentColor"/></svg>      </a>
+      <a href="#" aria-label="YouTube">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a2.8 2.8 0 0 0-2-2C19.5 4 12 4 12 4s-7.5 0-9.5.2a2.8 2.8 0 0 0-2 2C0 8.2 0 12 0 12s0 3.8.5 5.8a2.8 2.8 0 0 0 2 2C4.5 20 12 20 12 20s7.5 0 9.5-.2a2.8 2.8 0 0 0 2-2C24 15.8 24 12 24 12s0-3.8-.5-5.8ZM9.8 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22.2 5.6c-.8.4-1.7.6-2.6.8a4.6 4.6 0 0 0 2-2.5 9.3 9.3 0 0 1-3 1.2 4.6 4.6 0 0 0-7.8 4.2A13 13 0 0 1 3.1 4.8a4.6 4.6 0 0 0 1.4 6.1 4.6 4.6 0 0 1-2-.5v.1a4.6 4.6 0 0 0 3.7 4.5 4.6 4.6 0 0 1-2 .1 4.6 4.6 0 0 0 4.3 3.2A9.3 9.3 0 0 1 2 19.5a13 13 0 0 0 7 2c8.4 0 13-7 13-13v-.6a9.2 9.2 0 0 0 2.2-2.3Z"/></svg>
+      </a>
+    </div>
 
-                <div class="w-[190px]">
-                    <img src="/logo/7.png" alt="">
-                </div>
+    <div class="row">
+      <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+    </div>
 
-            </div>
-          <!-- Links -->
-          <div class="w-full mt-6 md:mt-0 md:w-1/3">
-            <h3 class="text-xl font-semibold flex items-center">
-              <i data-feather="shopping-bag"></i>
-              <span class="ml-2">Links</span>
-            </h3>
-            <nav>
-              <ul class="space-y-2  mt-4">
-                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#services" class="hover:text-gray-400">Services</a></li>
-                <li><a href="#about-us" class="hover:text-gray-400">About Us</a></li>
-                <!-- <li><a href="#" class="hover:text-gray-400">Contact</a></li> -->
-                <!-- <li><a href="#" class="hover:text-gray-400">Règlement concours</a></li> -->
-              </ul>
-            </nav>
-          </div>
-  
-          <!-- social media -->
-          <div class="w-full mt-6 md:mt-0 md:w-1/3">
-            <h3 class="text-xl font-semibold flex items-center">
-              <i data-feather="share-2"></i>
-              <span class="ml-2">Social Media  links</span>
-            </h3>
-            <nav>
-              <ul class="space-y-2 mt-4">
-                <li><a href="https://youtube.com/@infinitepathways5?si=pwKtqO6JPUOLhXKC"
-                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="youtube"></i> <span class="ml-2">YouTube</span></a></li>
-                <li><a href="https://www.facebook.com/share/15k3hxUV2u/?mibextid=wwXIfr" 
-                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="facebook"></i> <span class="ml-2">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/infinitepathways.uk/?utm_source=ig_contact_invite" 
-                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Instagram</span></a></li>
+    <div class="row copyright">
+      @ 2025 - All rights reserved.
+    </div>
+  </footer>
+</template>
 
-                <li><a href="https://www.tiktok.com/@infinite.pathways?_t=ZN-8uHVBY0PxWo&_r=1"
-                  target="_blank" class="flex items-center hover:text-gray-400"><i data-feather="instagram"></i> <span class="ml-2">Tiktok</span></a></li>
-              </ul>
-            </nav>
-          </div>
-  
-          <!-- Contact -->
-          <div class="w-full mt-6 md:mt-0 md:w-1/3">
-            <h3 class="text-xl font-semibold flex items-center">
-              <i data-feather="send"></i>
-              <span class="ml-2">Contact</span>
-            </h3>
-            <nav>
-              <ul class="mt-4 space-y-2">
-                <li><a  class="hover:text-gray-400">
-                    Email: info@infinitepathways.uk 
-                </a></li>
-                <li><a  class="hover:text-gray-400">
-                    Phone No: +234 8139 251145
+<style scoped>
+.footer {
+  background: #050505;
+  padding: 30px 0;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  color: gray;
+}
 
-                </a></li>
-                <li><a  class="hover:text-gray-400">
-                    Call: +44 7979 724120
+.row {
+  width: 100%;
+  margin: 1% 0;
+  padding: 0.6% 0;
+  font-size: 0.8em;
+}
 
-                </a></li>
-                <li><a  class="hover:text-gray-400">
-                    WhatsApp: +44 7448 805912
-                </a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-  
-        <!-- Footer Copyright -->
-        <div class="mt-8 pt-4 border-t border-gray-700 text-center">
-            <div class=" text-[#ffff] font-[400] flex item-center md:justify-center text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path d="M22.4414 12.333C22.4414 17.8558 17.9642 22.333 12.4414 22.333C6.91856 22.333 2.44141 17.8558 2.44141 12.333C2.44141 6.81016 6.91856 2.33301 12.4414 2.33301C17.9642 2.33301 22.4414 6.81016 22.4414 12.333Z" stroke="#fff" stroke-width="1.5"/>
-                        <path d="M15.4414 14.333C15.4414 15.4376 14.546 16.333 13.4414 16.333H12.4414C11.5095 16.333 11.0436 16.333 10.676 16.1808C10.186 15.9778 9.79664 15.5884 9.59365 15.0984C9.44141 14.7308 9.44141 14.2649 9.44141 13.333V11.333C9.44141 10.4011 9.44141 9.93519 9.59365 9.56764C9.79664 9.07759 10.186 8.68824 10.676 8.48525C11.0436 8.33301 11.5095 8.33301 12.4414 8.33301H13.4414C14.546 8.33301 15.4414 9.22844 15.4414 10.333" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <p class=" ml-[4px]">2024  Infinite Pathways. All rights reserved</p>
-            </div> 
-            <p class=" ml-[4px]">Built by 
-              <a href="https://roqsoft.com/" target="_blank" class="text-[#F17216] underline">
-                 Roqsoft.
-              </a>
-            </p>
-      
-         </div>
-      </div>
-    </footer>
-  </template>
-  
-  <script setup>
-  import { onMounted } from 'vue';
-  import feather from 'feather-icons';
-  
-  onMounted(() => {
-    feather.replace(); // Initialize feather icons
-  });
-  </script>
-  
-  <style scoped>
-  @keyframes parallax {
-    0% { background-position: 260px; }
-    100% { background-position: -10000vw; }
+.social-icons a {
+  margin: 0 10px;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+ul li a {
+  color: gray;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
   }
-  @keyframes parallax-fast {
-    0% { background-position: 260px; }
-    100% { background-position: -5000vw; }
+
+  ul li {
+    display: block;
+    margin: 10px 0;
   }
-  @keyframes parallax-medium {
-    0% { background-position: 260px; }
-    100% { background-position: -6000vw; }
+
+  .social-icons {
+    text-align: center;
   }
-  @keyframes moto {
-    0% { transform: translateY(0) rotate(0); }
-    25% { transform: translateY(60px) rotate(-20deg); }
-    50% { transform: translateY(0) rotate(1deg); }
-    75% { transform: translateY(60px) rotate(20deg); }
-    100% { transform: translateY(0) rotate(0); }
-  }
-  @keyframes voiture {
-    0% { transform: rotate(0); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(0); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0); }
-  }
-  
-  .animate-parallax { animation: parallax 600s linear infinite; z-index: 0; }
-  .animate-parallax-fast { animation: parallax-fast 500s linear infinite; z-index: 0; }
-  .animate-parallax-medium { animation: parallax-medium 600s linear infinite; z-index: 0; }
-  .animate-moto { animation: moto 5s linear infinite; z-index: 1; }
-  .animate-voiture { animation: voiture 1s linear infinite; z-index: 1; }
-  </style>
-  
+}
+</style>

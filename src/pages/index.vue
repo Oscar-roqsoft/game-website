@@ -218,10 +218,7 @@
         </section>
 
   
-      <!-- Footer -->
-      <footer class="bg-black text-gray-500 text-center py-6 border-t border-gray-800">
-        © 2025 GameZone. All rights reserved.
-      </footer>
+   
     </div>
 </template>
   
