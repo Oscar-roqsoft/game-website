@@ -40,7 +40,6 @@
   
   <script setup>
   import { ref, computed } from 'vue'
-  import TournamentSection from '~/components/TournamentSection.vue'
   
   // Static data (can be replaced with API later)
   const tournaments = ref([
