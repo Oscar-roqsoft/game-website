@@ -1,10 +1,10 @@
 <template>
     <section class="p-8">
       <div>
-        <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">
+        <h2 class="text-4xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">
             Why Join Our Platform?
         </h2>
-        <p class="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-600">
+        <p class="max-w-3xl mx-auto mt-4  text-center text-gray-300">
             Discover a vibrant community where your gaming skills earn real rewards..
         </p>
       </div>
@@ -15,7 +15,7 @@
           <h3 class="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">
             Explore the Benefits of Joining
           </h3>
-          <p class="mt-3 text-lg text-gray-300">
+          <p class="mt-3  text-gray-300">
              We provide a unique competitive gaming experience backed by fairness, rewards, and a strong community. Whether you're a casual gamer or a pro, there's something here for you.
           </p>
   
@@ -36,9 +36,9 @@
                   </svg>
                 </div> -->
               </div>
-              <div class="ml-4">
+              <div class="md:ml-4">
                 <h4 class="text-2xl font-medium leading-6 dark:text-gray-900">{{ item.title }}</h4>
-                <p class="mt-2 dark:text-gray-600"
+                <p class="mt-2 text-gray-300"
                 :class="{ 'text-green-600': selectedIndex === index }">{{ item.description }}</p>
               </div>
             </div>
@@ -46,7 +46,7 @@
         </div>
   
         <!-- Image Section with Transition -->
-        <div class="mt-10 lg:mt-0 relative h-[480px] w-[360px] mx-auto">
+        <div class="mt-10 lg:mt-0 relative h-[480px] w-[360px] mx-auto hidden md:block">
           <transition name="fade-scale" mode="out-in">
             <img
               :key="items[selectedIndex].image"

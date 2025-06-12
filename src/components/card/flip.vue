@@ -2,8 +2,18 @@
     <div class="card">
       <div class="content">
         <div class="back">
+          <img class="img" :src="backImage" alt="Back image" />
           <div class="back-content">
-            <img class="img" :src="backImage" alt="Back image" />
+            <div class="description">
+              <div class="title">
+                <p class=" text-sm font-bold">{{ title }}</p>
+                <span>{{ icon }}</span>
+              </div>
+              <div class="card-footer">
+                <p>{{ info }}</p>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div class="front">
@@ -43,6 +53,7 @@
     height: 254px;
     position: relative;
   }
+ 
   .content {
     width: 100%;
     height: 100%;
@@ -87,7 +98,7 @@
     position: absolute;
     width: 99%;
     height: 99%;
-    background-color: #151515;
+    /* background-color: #151515; */
     border-radius: 5px;
     color: white;
     display: flex;
@@ -103,6 +114,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: 0;
+  }
+  .back .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
     z-index: 0;
   }
   .front-content {
@@ -150,5 +169,5 @@
     0% { transform: rotateZ(0deg); }
     100% { transform: rotateZ(360deg); }
   }
-  </style>
+</style>
   

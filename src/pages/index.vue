@@ -71,11 +71,11 @@
     </div>
 
 
-    <!-- <div class="bg-gray-900 mt-14">
+    <div class="bg-gray-900 mt-14">
         <div class="max-w-[1200px] mx-auto ">
             <Why/>
         </div>
-    </div> -->
+    </div>
 
 
 
@@ -84,7 +84,7 @@
       <h2 class="text-3xl sm:text-4xl font-bold">
         Ready to Compete and Win Big?
       </h2>
-      <p class="mt-4 text-lg sm:text-xl">
+      <p class="mt-4 text-lg text-gray-300 sm:text-xl">
         Sign up now to join thousands of gamers in exciting tournaments <br> and start your journey to victory!
       </p>
 
