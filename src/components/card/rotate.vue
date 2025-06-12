@@ -71,7 +71,7 @@
       </div>
       <div class="card" style="--index: 1;--color-card: 142, 252, 204;">
          <div class="img w-full h-full">
-            <img src="/cyberpunk.jpg" alt="eFootball Game" />
+            <img src="/game/dreamleague.png" alt="eFootball Game" />
         </div>
       </div>
       <div class="card" style="--index: 2;--color-card: 142, 252, 157;">

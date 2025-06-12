@@ -15,6 +15,7 @@
             <h1 class="text-5xl md:text-[4.5rem] font-bold leading-tight hero-title">
             Join Our Next <br>  Gaming Battle
             </h1>
+            <p class="text-gray-300 hero-button">Sign up,find a game, and compete with the players like u - win prizes, build reputation, and level up. </p>
             <button class="mt-8 bg-green-500 hover:bg-green-600 px-6 py-3 text-lg font-semibold rounded hero-button">
             Browse Tournaments
             </button>
@@ -70,11 +71,11 @@
     </div>
 
 
-    <div class="bg-gray-900 mt-14">
+    <!-- <div class="bg-gray-900 mt-14">
         <div class="max-w-[1200px] mx-auto ">
             <Why/>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -131,9 +132,12 @@
       <section class="px-6 py-[100px]">
         <div class="max-w-[1200px] mx-auto">
 
-            <h2 class="text-4xl font-semibold  text-white mb-[54px]">Upcoming Tournaments</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <TournamentCard v-for="game in upcoming" :key="game.title" :game="game" />
+            <h2 class="text-4xl font-semibold  text-white mb-[54px] text-center">Upcoming Tournaments</h2>
+            <div class="flex items-center justify-center">
+
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 ">
+                <TournamentCard v-for="game in upcoming" :key="game.title" :game="game" />
+              </div>
             </div>
         </div>
       </section>
@@ -180,8 +184,8 @@
       <section class="px-6 py-12 bg-gray-900">
         <div class="max-w-[1200px] mx-auto flex  flex-col items-center">
 
-            <h2 class="text-2xl font-semibold mb-6">Latest Tournament Winners</h2>
-            <div class="flex flex-wrap gap-6">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Latest Tournament Winners</h2>
+            <div class="flex flex-wrap items-center justify-center gap-6">
               <div v-for="winner in winners" :key="winner.name" class="text-center">
                 <img :src="winner.avatar" alt="" class="rounded-full w-24 h-24 mx-auto mb-2" />
                 <p class="font-bold">{{ winner.name }}</p>
@@ -231,9 +235,9 @@ onMounted(() => {
 })
   const upcoming = [
     { title: 'Fortnite', img: '/fortnite1.jpg', spots: '3nts 2018' },
-    { title: 'Warzone', img: '/efootball1.jpg', spots: '4024/2013' },
+    { title: 'Efootball', img: '/game/efootballgame.png', spots: '4024/2013' },
     { title: 'FIFA 23', img: '/efootball1.jpg', spots: 'Available' },
-    { title: 'Dota 2', img: '/fortnite1.jpg', spots: 'Available' },
+    { title: 'Snooker', img: '/game/snooker.png', spots: 'Available' },
   ]
   
   const topGames = [

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hidden md:block">
     <!-- Navbar (Fixed) -->
     <nav
       :class="[
@@ -19,9 +19,16 @@
     </nav>
 
     <!-- Fake content to allow scrolling -->
-    <div class="">
+    <div class="  ">
       <slot />
     </div>
+  </div>
+
+
+  <div class=" block md:hidden  z-50 overflow-hidden">
+
+       <MobileNavbar/>
+
   </div>
 </template>
 

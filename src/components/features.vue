@@ -1,12 +1,14 @@
 <template>
-    <div class="min-h-[400px] flex flex-col justify-center items-center">
+    <div class="min-h-[400px] flex flex-col justify-center items-center px-4 md:px-0">
 
 
-        <h2 class="text-4xl tracking-wide font-bold mb-12">Featured Games</h2>
+        <h2 class="text-4xl tracking-wide font-bold mb-4">Featured Games</h2>
 
-        <div class="mt-[16px] rounded-md bg-gray-900 p-4 shadow-inner border-4 border-gray-900">
+        <p class="text-gray-300 mb-[24px] text-center">Discover our top-rated, most-played games—handpicked for excitement, challenge, and endless fun!</p>
 
-            <div class="card-grid ">
+        <div class="mt-[16px] rounded-md  p-4 shadow-inner ">
+
+            <div class="card-grid items-center justify-center">
               <CardFlip
                 v-for="(card, index) in cards"
                 :key="index"
@@ -40,11 +42,11 @@
       backImage: '/cyberpunk.jpg'
     },
     {
-      title: 'Minecraft',
+      title: 'Dream League',
       icon: '🌍',
-      info: 'Creative sandbox',
+      info: 'Creative Football game',
       badge: 'NEW',
-      backImage: '/cyberpunk.jpg'
+      backImage: '/game/dreamleague.png'
     },
     {
       title: 'Cyberpunk',
