@@ -45,17 +45,17 @@
         <h2 class="text-4xl font-bold mb-12 ">You are most welcomed <br> in the gaming world</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="p-6 bg-gray-900 rounded-xl shadow-lg animate-slide-in-left transition-all duration-1000 hover:scale-105">
-            <img src="/fortnite1.jpg" alt="Livestreaming" class="w-full h-40 object-cover rounded mb-4" />
+            <img src="/image/livestream1.jpg" alt="Livestreaming" class="w-full h-40 object-cover rounded mb-4" />
             <h3 class="text-xl font-semibold mb-2">🎥 Livestreaming</h3>
             <p>Watch live gaming tournaments and events streamed in real-time.</p>
         </div>
         <div class="p-6 bg-gray-900 rounded-xl shadow-lg animate-slide-in-top transition-all duration-1000 hover:scale-105">
-            <img src="/fortnite1.jpg" alt="Games News" class="w-full h-40 object-cover rounded mb-4" />
+            <img src="/image/gamenews1.jpg" alt="Games News" class="w-full h-40 object-cover rounded mb-4" />
             <h3 class="text-xl font-semibold mb-2">📰 Games News</h3>
             <p>Stay updated with the latest news from the global gaming scene.</p>
         </div>
         <div class="p-6 bg-gray-900 rounded-xl shadow-lg animate-slide-in-right transition-all duration-1000 hover:scale-105">
-            <img src="/fortnite1.jpg" alt="Tournaments" class="w-full h-40 object-cover rounded mb-4" />
+            <img src="/image/gametour1.jpg" alt="Tournaments" class="w-full h-40 object-cover rounded mb-4" />
             <h3 class="text-xl font-semibold mb-2">🏆 Game Tournaments</h3>
             <p>Participate in thrilling tournaments and compete for exciting prizes.</p>
         </div>

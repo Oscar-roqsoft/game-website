@@ -10,7 +10,7 @@
       <div class="fade-left md:hidden"></div>
 
       <!-- Scrollable Cards -->
-      <div class="card-scroll-container items-center justify-center">
+      <div class="card-scroll-container md:items-center md:justify-center">
         <CardFlip
           v-for="(card, index) in cards"
           :key="index"
