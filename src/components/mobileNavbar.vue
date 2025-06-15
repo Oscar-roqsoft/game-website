@@ -8,9 +8,10 @@
       <label for="active" class="menu-btn"><span></span></label>
       <label for="active" class="close"></label>
   
-      <div class="wrapper" :class="{ open: isActive }">
-        <ul class="flex flex-col ">
-          <li><a href="/">Home</a></li>
+      <div class="wrapper" :class="{ open : isActive }">
+        <ul class="flex flex-col "
+         >
+          <li ><a href="/">Home</a></li>
           <li><a href="/tournament">Tournaments</a></li>
           <li><a href="/how-it-works">How-It-Works</a></li>
           <li><a href="/leaderboard">Leaderboard</a></li>
@@ -41,8 +42,8 @@
   
   .wrapper {
     position: fixed;
-    z-index: 999;
     top: 0;
+    z-index: -99;
     right: -100%;
     height: 100vh;
     width: 100%;
@@ -50,7 +51,9 @@
     transition: all 0.6s ease-in-out;
   }
   .wrapper.open {
-    right: 0;
+    right: 0px;
+    z-index: 99;
+    /* z-index: -99; */
   }
   
   .menu-btn {
@@ -108,6 +111,7 @@
     text-align: center;
     width: 100%;
   }
+  
   .wrapper ul li {
     margin: 32px 0;
     
@@ -154,12 +158,15 @@
   }
   
   .close {
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
     pointer-events: none;
     transition: background 0.6s;
+    display: none;
   }
+
+ 
   
   .content {
     position: fixed;
