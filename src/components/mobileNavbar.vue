@@ -17,6 +17,7 @@
 
           <li ><a href="/">Home</a></li>
           <li><a href="/tournament">Tournaments</a></li>
+          <li><a href="/match-center">Match Center</a></li>
           <li><a href="/how-it-works">How-It-Works</a></li>
           <li><a href="/leaderboard">Leaderboard</a></li>
           <li><a class="bg-green-500 hover:bg-green-600 " href="#">Sign Up</a></li>
