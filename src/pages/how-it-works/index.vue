@@ -9,9 +9,12 @@
 
 
             <h1 class="text-5xl font-bold text-center mb-4 text-white z-20">How It Works</h1>
-            <p class="text-center text-gray-300 max-w-2xl mx-auto mb-12 z-20">
+            <p class="text-center text-gray-300 max-w-2xl mx-auto mb-6 z-20">
               Compete in your favorite games, win rewards, and connect with real players. Here’s how to get started:
             </p>
+
+            <svg class="z-20  bounce-up shadow-xl rounded-full" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><!-- Icon from Myna UI Icons by Praveen Juge - https://github.com/praveenjuge/mynaui-icons/blob/main/LICENSE --><path fill="green" d="M10.565 2.075c-.394.189-.755.497-1.26.928l-.079.066a2.56 2.56 0 0 1-1.58.655l-.102.008c-.662.053-1.135.09-1.547.236a3.33 3.33 0 0 0-2.03 2.029c-.145.412-.182.885-.235 1.547l-.008.102a2.56 2.56 0 0 1-.655 1.58l-.066.078c-.431.506-.74.867-.928 1.261a3.33 3.33 0 0 0 0 2.87c.189.394.497.755.928 1.26l.066.079c.41.48.604.939.655 1.58l.008.102c.053.662.09 1.135.236 1.547a3.33 3.33 0 0 0 2.029 2.03c.412.145.885.182 1.547.235l.102.008c.629.05 1.09.238 1.58.655l.079.066c.505.431.866.74 1.26.928a3.33 3.33 0 0 0 2.87 0c.394-.189.755-.497 1.26-.928l.079-.066c.48-.41.939-.604 1.58-.655l.102-.008c.662-.053 1.135-.09 1.547-.236a3.33 3.33 0 0 0 2.03-2.029c.145-.412.182-.885.235-1.547l.008-.102c.05-.629.238-1.09.655-1.58l.066-.079c.431-.505.74-.866.928-1.26a3.33 3.33 0 0 0 0-2.87c-.189-.394-.497-.755-.928-1.26l-.066-.079a2.56 2.56 0 0 1-.655-1.58l-.008-.102c-.053-.662-.09-1.135-.236-1.547a3.33 3.33 0 0 0-2.029-2.03c-.412-.145-.885-.182-1.547-.235l-.102-.008a2.56 2.56 0 0 1-1.58-.655l-.079-.066c-.505-.431-.866-.74-1.26-.928a3.33 3.33 0 0 0-2.87 0M12 6.75a.75.75 0 0 1 .75.75v7.19l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V7.5a.75.75 0 0 1 .75-.75"/>
+            </svg>
       
         </div>
 
@@ -120,9 +123,7 @@
   <script setup>
   import HowItWorksStep from '~/components/HowItWorksStep.vue'
   import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
 
 const communityRef = ref(null)
 
@@ -155,5 +156,26 @@ onMounted(() => {
     ease: 'power2.out',
   })
 })
-  </script>
+</script>
+
+
+<style scoped>
+
+    .bounce-up{
+        animation: bounce 3s infinite ease-in-out;
+    }
+    
+     @keyframes bounce {
+        0%{
+            transform: translateY(0px)
+        }
+        50%{
+            transform: translateY(30px) 
+        }
+        100%{
+            transform: translateY(0px) 
+        }
+        
+    }
+</style>
   

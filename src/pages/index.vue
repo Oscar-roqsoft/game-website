@@ -1,6 +1,5 @@
 <template>
     <div class="bg-gray-900 text-white min-h-screen z-20">
-   
   
     <!-- Hero Section -->
         <section class="relative h-[100vh] flex flex-col items-center justify-center z-10 overflow-hidden">
@@ -11,13 +10,13 @@
         <div class="absolute inset-0 z-10 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-gray-900/90 rounded-xl shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]"></div>
 
         <!-- Hero Content -->
-        <div class="relative z-20 text-center text-white px-6 max-w-[1200px] pt-[100px]">
-            <h1 class="text-5xl md:text-[4.5rem] font-bold leading-tight hero-title">
+        <div class="relative z-20 text-center text-white px-6 max-w-2xl pt-[100px]">
+            <h1 class="text-5xl md:text-[4.5rem] font-bold hero-title">
             Join Our Next <br>  Gaming Battle
             </h1>
-            <p class="text-gray-300 hero-button">Sign up,find a game, and compete with the players like u - win prizes, build reputation, and level up. </p>
+            <p class="text-gray-300 md:text-lg hero-button mt-4">Sign up,find a game, and compete with the players like u - win prizes, build reputation, and level up. </p>
             <button class="mt-8 bg-green-500 hover:bg-green-600 px-6 py-3 text-lg font-semibold rounded hero-button">
-            Browse Tournaments
+              Browse Tournaments
             </button>
         </div>
         

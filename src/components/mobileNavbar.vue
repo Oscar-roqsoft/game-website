@@ -1,7 +1,9 @@
 <!-- components/OverlayMenu.vue -->
 <template>
     <div class="fixed z-50 bg-gray-900 opacity-60 h-[90px] w-full"></div>
+
     <div class="fixed top-0 left-0 w-full z-50 bg-gray-900">
+
       <div class="text-2xl font-bold absolute left-[20px] top-[30px] z-50 text-white">🎮 LOGO</div>
       
       <input type="checkbox" id="active" v-model="isActive" />
@@ -10,7 +12,9 @@
   
       <div class="wrapper" :class="{ open : isActive }">
         <ul class="flex flex-col "
+         :class="isActive ?'' :'left-[-100vw_!important] transition ease-out duration-700'"
          >
+
           <li ><a href="/">Home</a></li>
           <li><a href="/tournament">Tournaments</a></li>
           <li><a href="/how-it-works">How-It-Works</a></li>
@@ -50,6 +54,7 @@
     background: #000;
     transition: all 0.6s ease-in-out;
   }
+
   .wrapper.open {
     right: 0px;
     z-index: 99;
@@ -111,6 +116,7 @@
     text-align: center;
     width: 100%;
   }
+ 
   
   .wrapper ul li {
     margin: 32px 0;
@@ -137,6 +143,7 @@
     transition-delay: 0.6s;
     transition-timing-function: ease, cubic-bezier(.1, 1.3, .3, 1);
   }
+ 
   .wrapper ul li a::after {
     position: fixed;
     content: "";
@@ -158,7 +165,7 @@
   }
   
   .close {
-    z-index: -1;
+    z-index: -999;
     width: 100%;
     height: 100%;
     pointer-events: none;

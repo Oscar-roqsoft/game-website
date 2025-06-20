@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-[400px] flex flex-col justify-center items-center  md:px-0">
     <h2 class="text-4xl tracking-wide font-bold mb-4">Featured Games</h2>
-    <p class="text-gray-300 mb-[24px] text-center">
+    <p class="text-gray-300 mb-[24px] text-center px-4">
       Discover our top-rated, most-played games—handpicked for excitement, challenge, and endless fun!
     </p>
 
@@ -33,6 +33,20 @@
   <script setup>
   
   const cards = [
+  {
+      title: 'Efootball',
+      icon: '🌍',
+      info: 'Creative sandbox',
+      badge: 'NEW',
+      backImage: '/image/eftball.png'
+    },
+    {
+      title: 'Call Of Duty',
+      icon: '🔥',
+      info: 'Popular Battle Royale',
+      badge: 'HOT',
+      backImage: '/image/COD1.png'
+    },
     {
       title: 'Fortnite',
       icon: '🔥',
@@ -40,13 +54,7 @@
       badge: 'HOT',
       backImage: '/cyberpunk.jpg'
     },
-    {
-      title: 'Minecraft',
-      icon: '🌍',
-      info: 'Creative sandbox',
-      badge: 'NEW',
-      backImage: '/cyberpunk.jpg'
-    },
+    
     {
       title: 'Dream League',
       icon: '🌍',
@@ -55,11 +63,11 @@
       backImage: '/game/dreamleague.png'
     },
     {
-      title: 'Cyberpunk',
+      title: 'Snooker',
       icon: '⚡',
       info: 'Futuristic RPG',
       badge: 'SALE',
-      backImage: '/cyberpunk.jpg'
+      backImage: '/image/snooker1.png'
     }
   ]
   </script>
