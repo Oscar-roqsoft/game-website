@@ -20,7 +20,7 @@
           <li><a href="/match-center">Match Center</a></li>
           <li><a href="/how-it-works">How-It-Works</a></li>
           <li><a href="/leaderboard">Leaderboard</a></li>
-          <li><a class="bg-green-500 hover:bg-green-600 " href="#">Sign Up</a></li>
+          <li><a class="bg-green-500 hover:bg-green-600 " href="/account">Sign Up</a></li>
           <!-- <li>
             <a>
                 <button class="text-sm bg-green-500 hover:bg-green-600 text-white px-6 py-2 min-w-[150px] rounded">Sign Up</button>
@@ -46,7 +46,7 @@
   }
   
   .wrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: -99;
     right: -100%;
@@ -63,7 +63,7 @@
   }
   
   .menu-btn {
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     right: 20px;
     top: 20px;
@@ -81,9 +81,9 @@
   .menu-btn::before,
   .menu-btn::after {
     content: "";
-    position: fixed;
-    top: calc(7% - 1px);
-    right: 5%;
+    position: absolute;
+    top: calc(28px - 1px);
+    right: 0px;
     width: 40px;
     border-bottom: 2px solid #f8f3f3;
     transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);

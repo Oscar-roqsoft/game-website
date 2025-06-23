@@ -3,9 +3,9 @@
     <!-- From Uiverse.io by yashasvi9199 --> 
 <div class="card">
   <div class="card2">
-    <form class="form">
+    <form class="form bg-gray-900" @click="navigateTo('/')">
       <p id="heading">Login</p>
-      <div class="field">
+      <div class="field bg-gray-900">
         <svg
           viewBox="0 0 16 16"
           fill="currentColor"
@@ -25,7 +25,7 @@
           autocomplete="off"
         />
       </div>
-      <div class="field">
+      <div class="field bg-gray-900">
         <svg
           viewBox="0 0 16 16"
           fill="currentColor"
@@ -41,12 +41,12 @@
         <input type="password" class="input-field" placeholder="Password" />
       </div>
       <div class="btn">
-        <button class="button1">
+        <button  class="button1 bg-green-500">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </button>
-        <button class="button2">Sign Up</button>
+        <button class="button2 bg-gray-800">Sign Up</button>
       </div>
-      <button class="button3">Forgot Password</button>
+      <button class="button3 bg-gray-800">Forgot Password</button>
     </form>
   </div>
 </div>
@@ -63,7 +63,7 @@
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 0.4em;
-  background-color: #171717;
+  /* background-color: #171717; */
   border-radius: 25px;
   transition: 0.4s ease-in-out;
 }
@@ -105,7 +105,7 @@
   border: none;
   outline: none;
   color: white;
-  background-color: #171717;
+  /* background-color: #171717; */
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
@@ -139,7 +139,7 @@
   border: none;
   outline: none;
   transition: 0.4s ease-in-out;
-  background-color: #252525;
+  /* background-color: #252525; */
   color: white;
 }
 
@@ -156,7 +156,7 @@
   border: none;
   outline: none;
   transition: 0.4s ease-in-out;
-  background-color: #252525;
+  /* background-color: #252525; */
   color: white;
 }
 
@@ -172,7 +172,7 @@
   border: none;
   outline: none;
   transition: 0.4s ease-in-out;
-  background-color: #252525;
+  /* background-color: #252525; */
   color: white;
 }
 

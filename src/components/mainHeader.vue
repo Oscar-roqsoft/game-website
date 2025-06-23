@@ -14,7 +14,7 @@
           <a href="/tournament" class="hover:text-green-400">Tournaments</a>
           <a href="/dashboard" class="hover:text-green-400">Dashboard</a>
         </div>
-        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Sign Up</button>
+        <button @click="navigateTo('/account')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Sign Up</button>
       </div>
     </nav>
 

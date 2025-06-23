@@ -1,6 +1,7 @@
 <template>
     <div class="min-h-screen bg-gray-950 text-white p-4">
       <div class="max-w-[1200px] mx-auto mt-[120px] pb-10">
+        
         <!-- Header -->
         <div class="items-center text-center mb-[32px]">
           <h1 class="text-3xl md:text-5xl font-bold">Match Center</h1>

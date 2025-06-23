@@ -3,6 +3,7 @@
   
     <!-- Hero Section -->
         <section class="relative h-[100vh] flex flex-col items-center justify-center z-10 overflow-hidden">
+
         <!-- Background Image or Video -->
         <img class="absolute top-0 left-0 w-full h-full object-cover z-0" src="/FIFA.gif" alt="eFootball Game" />
 
@@ -15,7 +16,7 @@
             Join Our Next <br>  Gaming Battle
             </h1>
             <p class="text-gray-300 md:text-lg hero-button mt-4">Sign up,find a game, and compete with the players like u - win prizes, build reputation, and level up. </p>
-            <button class="mt-8 bg-green-500 hover:bg-green-600 px-6 py-3 text-lg font-semibold rounded hero-button">
+            <button @click="navigateTo('/tournament')" class="mt-8 bg-green-500 hover:bg-green-600 px-6 py-3 text-lg font-semibold rounded hero-button">
               Browse Tournaments
             </button>
         </div>
@@ -40,8 +41,11 @@
     
     <!-- Welcome & Animated Cards -->
     <section class="pt-20 px-6 text-white">
-    <div class="max-w-[1200px] mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12 ">You are most welcomed <br class="hidden md:block"> in the gaming world</h2>
+    <div class="max-w-[1200px] mx-auto text-left">
+        <h2 class="text-4xl md:text-5xl font-bold tracking-wide text-center  mb-6 ">You are most welcomed <br class=" hidden md:flex"> in the gaming world</h2>
+        <p class="text-sm text-gray-300 sm:text-lg text-center mb-6">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae illo dolorum atque  <br class=" hidden md:flex"> amet voluptates! Ut veritatis alias exercitationem aliquid dolore?
+       </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="p-6 bg-gray-900 rounded-xl shadow-lg animate-slide-in-left transition-all duration-1000 hover:scale-105">
             <img src="/image/livestream1.jpg" alt="Livestreaming" class="w-full h-40 object-cover rounded mb-4" />
@@ -92,6 +96,7 @@
 
       <div class="mt-8 flex justify-center gap-4 flex-wrap">
         <button
+        @click="navigateTo('/account')"
           class="bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 hover:text-black transition"
         >
           Join Now
@@ -134,7 +139,10 @@
       <section class="px-6 py-[100px]">
         <div class="max-w-[1200px] mx-auto">
 
-            <h2 class="text-4xl font-semibold  text-white mb-[54px] text-center">Upcoming Tournaments</h2>
+            <h2 class="text-4xl font-semibold  text-white mb-[16px] text-center">Upcoming Tournaments</h2>
+            <p class="text-sm text-gray-300 sm:text-lg text-center mb-10">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae illo  <br class=" hidden md:flex"> amet voluptates! Ut veritatis exercitationem aliquid dolore?
+            </p>
             <div class="flex items-center justify-center">
 
               <div class="grid grid-cols-1 md:grid-cols-4 gap-4 ">
