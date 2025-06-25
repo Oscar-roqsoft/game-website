@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-900 pt-16">
       <div class="">
-        <div class="min-h-[60vh] relative flex flex-col justify-center items-center px-4
+        <div class="min-h-[40vh] md:min-h-[60vh] relative flex flex-col justify-center items-center px-4
            bg-[url('/image/gametime1.jpg')] bg-cover bg-bottom z-20">
 
            <!-- Dark Gradient Overlay with darker edges -->
