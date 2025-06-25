@@ -3,7 +3,7 @@
     <!-- From Uiverse.io by yashasvi9199 --> 
 <div class="card">
   <div class="card2">
-    <form class="form bg-gray-900" @click="navigateTo('/')">
+    <form class="form bg-gray-900" >
       <p id="heading">Login</p>
       <div class="field bg-gray-900">
         <svg

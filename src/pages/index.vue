@@ -190,42 +190,43 @@
         </div>
       </section> -->
   
-      <!-- Tournament Winners -->
-      <section class="px-6 py-12 bg-gray-900">
-        <div class="max-w-[1200px] mx-auto flex  flex-col items-center">
+      <section class="py-16 px-6 bg-gray-950 text-white overflow-hidden">
+    <div class="max-w-[1200px] mx-auto relative">
+      <h2 class="text-3xl font-bold text-center mb-12">What Players Say</h2>
 
-            <h2 class="text-2xl font-semibold mb-6 text-center">Latest Tournament Winners</h2>
-            <div class="flex flex-wrap items-center justify-center gap-6">
-              <div v-for="winner in winners" :key="winner.name" class="text-center">
-                <img :src="winner.avatar" alt="" class="rounded-full w-24 h-24 mx-auto mb-2" />
-                <p class="font-bold">{{ winner.name }}</p>
-                <p class="text-sm">{{ winner.status }}</p>
-              </div>
-            </div>
+      <!-- Top Row: scrolls left to right -->
+      <div class="marquee-wrapper relative">
+        <div class="marquee-cover-horizontal left"></div>
+        <div class="marquee-cover-horizontal right"></div>
+        <div class="track-horizontal animate-left-to-right">
+          <div
+            v-for="(testimonial, index) in repeatedTestimonials"
+            :key="'top-' + index"
+            class="testimonial-card bg-gray-800 rounded p-6 mx-4 text-center w-[300px] shrink-0"
+          >
+            <p class="text-white leading-relaxed">“{{ testimonial.quote }}”</p>
+            <p class="mt-4 font-bold text-green-400">– {{ testimonial.name }}</p>
+          </div>
         </div>
-      </section>
+      </div>
 
-          <!-- Testimonials -->
-        <section class="py-16 px-6">
-            <div class="max-w-[1200px] mx-auto">
-
-                <h2 class="text-3xl font-bold text-center mb-12">What Players Say</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-gray-800 p-6 rounded">
-                    <p>“Best online tournament experience I've ever had. Super smooth and thrilling!”</p>
-                    <p class="mt-4 font-bold text-green-400">– Alex G.</p>
-                    </div>
-                    <div class="bg-gray-800 p-6 rounded">
-                    <p>“I won my first ever tournament here. Totally legit and worth the time.”</p>
-                    <p class="mt-4 font-bold text-green-400">– QueenBee</p>
-                    </div>
-                    <div class="bg-gray-800 p-6 rounded">
-                    <p>“Great platform, awesome community, and real rewards. Highly recommended.”</p>
-                    <p class="mt-4 font-bold text-green-400">– DevOnFire</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Bottom Row: scrolls right to left -->
+      <div class="marquee-wrapper mt-8 relative">
+        <div class="marquee-cover-horizontal left"></div>
+        <div class="marquee-cover-horizontal right"></div>
+        <div class="track-horizontal animate-right-to-left">
+          <div
+            v-for="(testimonial, index) in repeatedTestimonials"
+            :key="'bottom-' + index"
+            class="testimonial-card bg-gray-800 rounded p-6 mx-4 text-center w-[300px] shrink-0"
+          >
+            <p class="text-white leading-relaxed">“{{ testimonial.quote }}”</p>
+            <p class="mt-4 font-bold text-green-400">– {{ testimonial.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   
    
@@ -268,6 +269,25 @@ const featuredGame = {
   description: 'Enter the battlefield with your squad and dominate the arena in this fast-paced shooter.',
   spots: 18
 }
+
+
+const testimonials = [
+  {
+    quote: "Best online tournament experience I've ever had. Super smooth and thrilling!",
+    name: "Alex G.",
+  },
+  {
+    quote: "I won my first ever tournament here. Totally legit and worth the time.",
+    name: "QueenBee",
+  },
+  {
+    quote: "Great platform, awesome community, and real rewards. Highly recommended.",
+    name: "DevOnFire",
+  },
+]
+
+// Duplicate testimonials array for smooth marquee loop
+const repeatedTestimonials = [...testimonials, ...testimonials]
 </script>
 
 
@@ -307,6 +327,82 @@ const featuredGame = {
 
 .animate-slide-in-top {
   animation: slide-in-top 1s ease-out forwards;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+/* Track */
+.track-horizontal {
+  display: flex;
+  width: max-content;
+}
+
+/* Animations */
+.animate-left-to-right {
+  animation: scroll-right 40s linear infinite;
+}
+.animate-right-to-left {
+  animation: scroll-left 40s linear infinite;
+}
+
+.testimonial-card {
+  flex: 0 0 auto;
+}
+
+/* Infinite loop */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+
+.marquee-cover-horizontal {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(270deg, rgba(15, 23, 42, 0) 90%, #0b0b0c),
+    linear-gradient(90deg, #0b0b0c, rgba(15, 23, 42, 0) 30%),
+    linear-gradient(-90deg, #0b0b0c, rgba(15, 23, 42, 0) 30%),
+    linear-gradient(-270deg, #0b0b0c, rgba(15, 23, 42, 0) 0%);
+}
+
+
+@media (max-width: 769px){
+  .marquee-cover-horizontal{
+    background-image:
+    linear-gradient(270deg, rgba(15, 23, 42, 0) 90%, #0b0b0c),
+    linear-gradient(90deg, #0b0b0c, rgba(15, 23, 42, 0) 20%),
+    linear-gradient(-90deg, #0b0b0c, rgba(15, 23, 42, 0) 30%),
+    linear-gradient(-270deg, #0b0b0c, rgba(15, 23, 42, 0) 0%);
+  }
 }
 
 </style>
