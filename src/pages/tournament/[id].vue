@@ -156,6 +156,26 @@
       availableSlots: 12,
       description: 'Join the intense battle royale showdown!',
     },
+    {
+      id: 3,
+      name: 'COD Battle Royale',
+      game: 'Call of Duty',
+      date: '2025-08-05',
+      entryFee: 3000,
+      img: '/fortnite1.jpg',
+      availableSlots: 12,
+      description: 'Join the intense battle royale showdown!',
+    },
+    {
+      id: 4,
+      name: 'COD Battle Royale',
+      game: 'Call of Duty',
+      date: '2025-08-05',
+      entryFee: 3000,
+      img: '/fortnite1.jpg',
+      availableSlots: 12,
+      description: 'Join the intense battle royale showdown!',
+    },
   ]
   
   const tournament = ref(tournaments.find(t => t.id === Number(route.params.id)) || {})
