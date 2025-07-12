@@ -1,25 +1,21 @@
 <template>
     <section class="min-h-screen bg-gray-950 text-white py-32 px-4">
-
-        <div class="max-w-5xl mx-auto flex justify-center items-center mb-10">
-            <CountdownTimer :endDate="'2025-08-05T23:59:59'" text-size="text-5xl"/>
-        </div>
-
+      <div class="max-w-5xl mx-auto flex justify-center items-center mb-10">
+        <CountdownTimer :endDate="'2025-08-05T23:59:59'" text-size="text-5xl" />
+      </div>
+  
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
         <!-- Tournament Info Card -->
         <div class="bg-gray-900 rounded-2xl shadow-md border border-gray-800 p-6">
-
-
           <div class="flex justify-between items-center mb-4">
             <h1 class="text-2xl font-bold">{{ tournament.name }}</h1>
             <span
               class="px-3 py-1 text-sm rounded-full text-white"
-              :class="tournament.entryFee === 0 ? 'bg-green-600' : ' bg-yellow'"
+              :class="tournament.entryFee === 0 ? 'bg-green-600' : 'bg-yellow'"
             >
               {{ tournament.entryFee === 0 ? 'Free' : '₦' + tournament.entryFee.toLocaleString() }}
             </span>
           </div>
-
   
           <img
             :src="tournament.img"
@@ -32,11 +28,11 @@
           <div class="space-y-4">
             <div>
               <p class="text-sm text-gray-100 font-semibold">🎮 Game</p>
-              <p class="text-md text-gray-400 ">{{ tournament.game }}</p>
+              <p class="text-md text-gray-400">{{ tournament.game }}</p>
             </div>
             <div>
               <p class="text-sm text-gray-100 font-semibold">📅 Date</p>
-              <p class="text-md text-gray-400 ">{{ formattedDate }}</p>
+              <p class="text-md text-gray-400">{{ formattedDate }}</p>
             </div>
             <div>
               <p class="text-sm text-gray-100 font-semibold">👥 Available Slots</p>
@@ -48,7 +44,7 @@
         <!-- Join Form -->
         <div class="bg-gray-900 rounded-2xl shadow-md border border-gray-800 p-6">
           <h2 class="text-xl font-semibold mb-4">Join Tournament</h2>
-          <form @submit.prevent="handleSubmit" class="space-y-4">
+          <form @submit.prevent="showConfirm = true" class="space-y-4">
             <div>
               <label class="text-sm text-gray-400 block mb-1">Full Name</label>
               <input
@@ -99,14 +95,35 @@
             >
               {{ tournament.entryFee === 0 ? 'Join for Free' : 'Join & Pay' }}
             </button>
-  
-            <div
-              v-if="successMessage"
-              class="mt-4 bg-green-700 text-white text-sm p-3 rounded shadow"
-            >
-              {{ successMessage }}
-            </div>
           </form>
+        </div>
+      </div>
+  
+      <!-- Confirmation Modal -->
+      <div
+        v-if="showConfirm"
+        class="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4"
+      >
+        <div class="bg-gray-900 border border-gray-700 p-6 rounded-lg w-full max-w-md text-white">
+          <h3 class="text-xl font-semibold mb-4">Confirm Participation</h3>
+          <p class="mb-6">
+            You are about to join <span class="font-bold">{{ tournament.name }}</span>. <br />
+            Entry Fee: <span class="font-semibold">{{ tournament.entryFee === 0 ? 'Free' : '₦' + tournament.entryFee.toLocaleString() }}</span>
+          </p>
+          <div class="flex justify-end gap-4">
+            <button
+              class="px-4 py-2 rounded bg-gray-700 hover:bg-gray-600"
+              @click="showConfirm = false"
+            >
+              Cancel
+            </button>
+            <button
+              class="px-4 py-2 rounded bg-green-600 hover:bg-green-500"
+              @click="handleSubmit"
+            >
+              {{ tournament.entryFee === 0 ? 'Join' : 'Proceed to Pay' }}
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -136,42 +153,36 @@
       date: '2025-08-05',
       entryFee: 3000,
       img: '/fortnite1.jpg',
-      availableSlots: 0,
+      availableSlots: 12,
       description: 'Join the intense battle royale showdown!',
     },
   ]
   
   const tournament = ref(tournaments.find(t => t.id === Number(route.params.id)) || {})
-  
-  const form = reactive({
-    name: '',
-    email: '',
-    gamerTag: ''
-  })
-  
+  const showConfirm = ref(false)
+  const form = reactive({ name: '', email: '', gamerTag: '' })
   const successMessage = ref('')
   
   const formattedDate = computed(() => {
     const d = new Date(tournament.value.date)
     return d.toLocaleDateString(undefined, {
-      weekday: 'short',
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
+      weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'
     })
   })
   
   function handleSubmit() {
+    showConfirm.value = false
+  
     if (!form.name || !form.email || !form.gamerTag) return
   
-    if (tournament.value.availableSlots > 0) {
+    if (tournament.value.entryFee === 0) {
       tournament.value.availableSlots--
-      successMessage.value = tournament.value.entryFee === 0
-        ? '🎉 You have successfully joined the tournament!'
-        : '✅ Spot reserved! Proceed to payment gateway.'
-      form.name = ''
-      form.email = ''
-      form.gamerTag = ''
+      successMessage.value = '🎉 You have successfully joined the tournament!'
+      form.name = form.email = form.gamerTag = ''
+    } else {
+      // Integrate Flutterwave here
+      // You can use window.FlutterwaveCheckout() if script is included
+      console.log('Triggering payment modal...')
     }
   }
   </script>
