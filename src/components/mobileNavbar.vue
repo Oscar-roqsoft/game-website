@@ -11,22 +11,25 @@
       <label for="active" class="close"></label>
   
       <div class="wrapper" :class="{ open : isActive }">
-        <ul class="flex flex-col "
-         :class="isActive ?'' :'left-[-100vw_!important] transition ease-out duration-700'"
-         >
 
-          <li ><a href="/">Home</a></li>
-          <li><a href="/tournament">Tournaments</a></li>
-          <li><a href="/match-center">Match Center</a></li>
-          <li><a href="/how-it-works">How-It-Works</a></li>
-          <li><a href="/leaderboard">Leaderboard</a></li>
-          <li><a class="bg-green-500 hover:bg-green-600 " href="/account">Sign Up</a></li>
-          <!-- <li>
-            <a>
-                <button class="text-sm bg-green-500 hover:bg-green-600 text-white px-6 py-2 min-w-[150px] rounded">Sign Up</button>
+        <ul
+          class="flex flex-col"
+          :class="isActive ? '' : 'left-[-100vw_!important] transition ease-out duration-700'"
+        >
+          <li v-for="(item, index) in menuItems" :key="index">
+            <a
+              :href="item.href"
+              :class="[
+                item.isCTA
+                  ? 'bg-green-500 hover:bg-green-600 text-white px-6 py-2 min-w-[150px] rounded text-center'
+                  : '',
+              ]"
+            >
+              {{ item.label }}
             </a>
-          </li> -->
+          </li>
         </ul>
+
       </div>
   
     
@@ -35,6 +38,14 @@
   
   <script setup>
   const isActive = ref(false)
+  const menuItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Tournaments', href: '/tournament' },
+  { label: 'Match Center', href: '/match-center' },
+  { label: 'How-It-Works', href: '/how-it-works' },
+  { label: 'Leaderboard', href: '/leaderboard' },
+  { label: 'Sign Up', href: '/account', isCTA: true }, // CTA = Call to Action
+]
   </script>
   
   <style scoped>

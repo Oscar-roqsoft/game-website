@@ -9,12 +9,12 @@
         </div>
   
         <!-- Game Filter and Tabs -->
-        <div class="flex flex-col sm:flex-row justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row justify-between gap-4 mb-6 text-white">
           <!-- Naive UI Tabs -->
           <n-tabs
             type="line"
             v-model:value="activeTab"
-            class="text-white md:w-[40%]"
+            class="md:w-[40%]"
             animated
             pane-style="padding: 0;"
           >

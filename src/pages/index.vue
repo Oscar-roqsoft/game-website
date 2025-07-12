@@ -1,7 +1,8 @@
 <template>
     <div class="bg-gray-900 text-white min-h-screen z-20">
   
-    <!-- Hero Section -->
+
+      <!-- Hero Section -->
         <section class="relative h-[100vh] flex flex-col items-center justify-center z-10 overflow-hidden">
 
         <!-- Background Image or Video -->
@@ -36,6 +37,9 @@
         <img src="/fortnite1.jpg" alt="sponsor 5" class="h-12 w-auto" />
     </div>
     </section> -->
+
+
+    <LogoIcons/>
 
    
     
@@ -90,6 +94,7 @@
       <h2 class="text-3xl sm:text-4xl font-bold">
         Ready to Compete and Win Big?
       </h2>
+
       <p class="mt-4 text-lg text-gray-300 sm:text-xl">
         Sign up now to join thousands of gamers in exciting tournaments <br> and start your journey to victory!
       </p>

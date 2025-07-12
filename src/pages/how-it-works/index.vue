@@ -6,8 +6,6 @@
 
            <!-- Dark Gradient Overlay with darker edges -->
         <div class="absolute inset-0 z-10 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-gray-900/90  shadow-[inset_0_0_100px_rgba(0,0,0,0.5)] h-full"></div>
-
-
             <h1 class="text-5xl font-bold text-center mb-4 text-white z-20">How It Works</h1>
             <p class="text-center text-gray-300 max-w-2xl mx-auto mb-6 z-20">
               Compete in your favorite games, win rewards, and connect with real players. Here’s how to get started:

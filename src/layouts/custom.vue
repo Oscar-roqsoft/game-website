@@ -6,3 +6,6 @@
         <!-- <MainFooter/> -->
     </div>
 </template>
+
+<script setup>
+</script>

@@ -2,15 +2,19 @@
     <div class="game-card-wrapper">
       <div class="game-card">
         <img :src="game.img" alt="" class="w-full h-40 object-cover rounded-t" />
-        <div class="p-4">
+        <div class="px-4 py-2">
           <h3 class="heading">{{ game.title }}</h3>
           <p class="spots">Spots: {{ game.spots }}</p>
+          <CountdownTimer :endDate="'2025-08-05T23:59:59'" />
+          <n-button type="primary" class="mt-4 capitalize font-semibold">Join now</n-button>
         </div>
       </div>
     </div>
   </template>
   
   <script setup>
+    import { NSelect, NTabs, NButton } from 'naive-ui'
+
   defineProps({
     game: Object
   })
@@ -20,7 +24,7 @@
   .game-card-wrapper {
     position: relative;
     width: 250px;
-    height: 310px;
+    height: 325px;
     border-radius: 12px;
     z-index: 1;
   }
@@ -71,7 +75,7 @@
   }
   
   .heading {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: capitalize;
   }
