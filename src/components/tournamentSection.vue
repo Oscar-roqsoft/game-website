@@ -19,6 +19,7 @@
         :key="tournament.id"
         :tournament="tournament"
         :show-scores="showScores"
+        @click="navigateTo(`/tournament/${tournament.id}`)"
       />
     </div>
   </div>

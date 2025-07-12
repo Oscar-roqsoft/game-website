@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col  justify-center">
+    <div class="flex flex-col justify-center">
       <div v-if="!isExpired">
-        <div class="flex gap-4 text-xl font-bold text-white">
+        <div :class="['flex gap-4 font-bold text-white', textSize]">
           <div class="flex flex-col items-center">
             <span>{{ time.days }}</span>
             <span class="text-xs font-medium text-gray-400">Days</span>
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div v-else class=" py-2 rounded text-red-600 text-sm font-semibold">
+      <div v-else class="py-2 rounded text-red-600 text-sm font-semibold">
         Countdown Ended
       </div>
     </div>
@@ -35,6 +35,10 @@
       type: String,
       required: true,
     },
+    textSize: {
+      type: String,
+      default: 'text-xl', // Tailwind class (you can pass 'text-2xl', 'text-sm', etc.)
+    }
   })
   
   const time = ref({

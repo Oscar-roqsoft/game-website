@@ -97,5 +97,5 @@
   const upcomingTournaments = computed(() => filtered.value.filter(t => t.status === 'upcoming'))
   const ongoingTournaments = computed(() => filtered.value.filter(t => t.status === 'ongoing'))
   const completedTournaments = computed(() => filtered.value.filter(t => t.status === 'completed'))
-  </script>
+</script>
   
